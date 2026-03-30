@@ -36,10 +36,10 @@ def setup():
 
 def draw():
     pg.beginDraw()
-    pg.background(255)
+    pg.background(0)
     pg.translate(RENDER_W / 2, RENDER_H / 2)
     pg.noFill()
-    pg.stroke(0)
+    pg.stroke(255)
 
     # 中心の小円
     pg.strokeWeight(1.4)
@@ -60,7 +60,7 @@ def draw():
 
     pg.endDraw()
 
-    background(255)
+    background(0)
     image(pg, 0, 0, width, height)
 
     if frameCount == OUTPUT_STILL_FRAME:
